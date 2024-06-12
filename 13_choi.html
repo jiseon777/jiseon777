@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day13.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+    <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '13. 최 교수님 강의실 앞',
+            '교수님 연구실 앞에 커다란 상자가 놓여 있습니다. 교수님 연구실 앞에 놓인 상자이니, 교수님 물건이 아닐까요? <br><br>지금은 교수님께서 자리를 비우신 상태이기에, 여부 확인은 불가합니다. 그렇게 별다른 일 없이 야작의 밤이 찾아왔습니다. <br> 정수기에서 물을 받아 마시기 위해 텀블러를 들고 학과 입구로 향하는 당신. 복도를 커다란 상자가 막고 있으니 조금 불편한 감이 있습니다. 안 그래도 작업 탓에 신경이 예민해진 상황이라, 상자를 좋게 보기가 어렵습니다. 별 생각 없이 상자를 훑던 당신은 깜짝 놀랍니다.',
+            '상자 아랫면은 조금 뜯어져 있었는데, 그 안에 사람의 얼굴로 보이는 형체가 들어 있었습니다.  <br><br>                                                                                       <a href="13_choi_dice.html">1. 겁이 엄청 많은 편은 아니라고 굳게 믿어왔던 당신. 이건 정말 무섭습니다. 하지만 곧 생각을 달리 합니다. 설마 진짜 사람이겠나요. 밀랍 인형이나 마네킹 같은 것이고, 아마 과제나 연구를 위해 사용될 것이라 추측합니다. 예술 대학교는 본디 생각의 틀을 깨부수는 작업들로 넘쳐납니다. 이것도 그 중 하나일 거라 믿습니다. 곧 졸작 시즌이기도 하니까요.</a>                            <br>                                                                                                                               <a href="13_choi_dice.html">2.무섭고 두렵습니다. 정확히 뭔지 확인할 자신 역시 없습니다. 확인은 뒤로 하고 다른 야작인들을 찾아 뛰어갑니다. 야작인들과 함께라면 덜 무서울 것 같으니까요. </a> <br>                                     <a href="13_choi_dice.html">3.이건 좀 놀라웠습니다.상당히 무섭네요. 이상한 일들이 내내 벌어지던 학교이긴 했는데, 이제는 사람 시체까지... 사람 시체가 맞는지는 확실하지 않지만, 귀신도 나왔는데 시체라고 안 나올까 싶습니다. 미스터리 소설을 그만 읽을까 봅니다. </a> <br>   <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

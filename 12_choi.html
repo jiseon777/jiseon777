@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day22.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+     <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '12. 최 교수님 강의실 앞',
+            '원래는 안 될 테지만, 소중하고 사랑스러운 애완동물을 데리고 학교에 오는 학생들이 있습니다. 보통 수업시간이 아닌 때에 잠깐 얼굴 비추고 가는 정도이지요. 동물 친구들은 언제나 인기가 좋은 편입니다. 잦은 야작과 졸업을 위한 작업들을 헤쳐나가느라 몸과 마음이 매우 지친 상태입니다. 동기 한 명이 축 늘어진 분위기를 안타깝게 여기며, 집에서 강아지를 데려 와도 좋겠냐고 묻습니다. 당신과 학우들은 전부 찬성합니다. 팍팍한 야작맨들의 삶의 한 줄기 빛 같은 존재가 되어줄 수도 있습니다.<br>동기는 서둘러 집으로 돌아가고, 남은 사람들은 집으로 떠난 동기만을 기다립니다. <br><br>그렇게 몇 분이 흐릅니다. 슬슬 동기가 귀여운 동물을 데리고 올 때가 되었는데 말이죠. 하지만 당신과 친구들은 깜짝 놀랄 수밖에 없었습니다.',
+            '학생들 앞에 있는 것은 강아지가 아닌 성난 원숭이였기 때문입니다. 강아지를 데리러 간 동기는 보이지 않습니다. 동기가 데려온 게 아닐 수도 있겠네요. <br><br>                                                                                       <a href="12_choi_dice.html">1.원숭이는 동물원에서만 봐 왔지, 유리창 없는 곳에서 마주하려니 상당히 무섭네요. 원숭이가 교수님 연구실 앞에서 소리를 지릅니다. 창문 밖으로 떨어지기라도 하면 큰일이지만, 함부로 접근했다가 물리기라도 하면 큰일입니다. 그대로 경찰에 신고하기로 마음먹습니다.</a>                            <br>                                                                                                                               <a href="12_choi_dice.html">2.무서워서 도망쳤다. 물렸다가 이상한 병 같은 것에 걸리면 졸업도 힘들어진다. 이미 당신은 자리를 떴습니다. </a> <br>                                     <a href="12_choi_dice.html">3."원숭아 이리 와 봐~"사실 당신은 원숭이를 좋아합니다. 모든 동물을 사랑하지요. 하지만 원숭이는 당신에게 관심이 없습니다. 주변 학생들이 경찰 혹은 동물보호소에 신고할 때 까지 원숭이를 관찰합니다. 과제로부터 도피하고 싶은 마음에 원숭이가 과제를 전부 박살내 주었으면 하는 마음도 들지만, 사실 그랬다가는 졸업이 힘들 테니 마음 속에 고이 넣어두기로 합니다. </a> <br>    <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

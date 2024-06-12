@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day30.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+      <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+    <script>
+        var texts = [
+            '15. 홍 교수님 강의실 앞',
+            '정말 마지막입니다. 모든 게 완성으로 달려갑니다. <br><br>알 수 없는 손들이 하굣길의 당신을 방해합니다. ',
+            '가지 말라는 뜻일까요? 수 많은 손이 당신을 끌어당깁니다. <br><br>                                                                                       <a href="15_hong_dice.html">1.다 비켜라, 나는 제 때 졸업하ㅡㄴ 게 꿈이다.</a>                            <br>                                                                                                                               <a href="15_hong_dice.html">2.조금만 더 참고 기다려봐...  </a> <br>                                     <a href="15_hong_dice.html">3.주체적인 성향과 오컬트가 많나면...내가 그런 걸 보는 학생이지 않았나 싶다. </a> <br>   <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

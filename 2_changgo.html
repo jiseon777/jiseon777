@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day5.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+    <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '2. 창고',
+            '아직까지 학교의 많은 것들이 생소한 당신입니다. 야작 신청하는 법만 확실히 익혔을 뿐입니다. 신입생 치고 역시 과제량은 많은 편이라고 생각이 되지만, 별 수 있나요? <br> 평화로운 오후가 지나가고 또 밤이 찾아왔습니다. 아직까지는 운동도 병행할만 합니다. 학교 주변을 산책하고 들어온 당신. 손을 씻기 위해 화장실에 들어갔다 나온 뒤, 수상한 것이 눈에 띕니다. 수상하다기 보다는, 당신의 호기심을 자극하는 요소네요. 바로 화장실 옆에 딸려있는 창고입니다. 일반적인 규격의 문보다 작습니다. 늦은 밤, 이 안에서 이상한 소리가 들려오기도 했던 것 같습니다.',
+            '당신은 호기심의 호기심은 어떤 방향으로 흐르게 될까요? <br><br>                                                                                       <a href="2_changgo_dice.html">1.열면 안된다고 쓰여있지는 않지만, 그게 열어서 된다는 뜻은 아니다. 기껏 해야 청소용품이 나오겠지 싶다. 그냥 작업 하러 들어가는 게 나을 듯 싶다.</a>                            <br>                                                                                                                               <a href="2_changgo_dice.html">2.무섭다. 왜 입학하자마자 자꾸 안 좋은 징조들이 보일까. 창고 안에 누가 숨어 있을 것만 같다. 그게 누구든 내 친구는 될 수 없을 것이다. </a> <br>                                     <a href="2_changgo_dice.html">3.이런 걸 쳐다 볼 바에는 치킨을 먹는 편이 정신 건강에 이로울 것이다. 안에서 뭔가 나온다 한들, 사람이겠지. 귀신같은 것이어도 상관은 없다. </a> <br>    <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

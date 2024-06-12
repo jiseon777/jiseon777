@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day18.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+    <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '8. 스튜디오<h3>',
+            '중간고사 기간입니다. 야작이 한창일 때라, 당신은 오늘도 철야 작업에 매진합니다. 고되고 힘들지만, 완성하고 제출하고 나면 그만큼 개운할 수가 없습니다. 그래도 오늘은 혼자가 아닙니다. 같은 반 동기가 함께합니다. 동기와 함께하면 배로 즐거운 야작 시간이라지만, 낭만 있는 시간을 보낼 정도로 여유있지 않습니다. 당장 제출이 내일이고, 발표까지 준비해야 합니다. <br><br> 작업에 한창 매진 중인 두 사람입니다. 시간은 두 시가 다 되어 갑니다. 동기는 몸이 안 좋은지 작업을 중단하고 휴게 공간에 누우며 말합니다. <br><br> "나 30분만 있다가 깨워주라, 부탁할게..." 그대로 죽은 듯 잠든 동기를 뒤로 하고 열심히 과제에 집중합니다. <br><br> 시간이 얼마나 흘렀을까요? 깨워달라는 동기의 말이 기억나 동기가 누운 자리를 바라보는데, 웬 꼬마아이가 눈에 띕니다. 대학에 들어올 수 없는 나잇대로 보아하니 외부인이 틀림 없습니다. 꼬마는 기묘한 분위기를 풍기며 당신을 향해 웃습니다. <br> 자세히 보아하니 꼬마의 눈이 있어야 할 자리에 아무 것도 없습니다. 대신, 옆에 쓰러져 있는 동기에 등에 눈알 두 개가 대신 박혀 있습니다. 정확히 당신을 바라보고 있네요.  ',
+            '어떻게 할까요? <br><br>                                                                                       <a href="8_studio_dice.html">1.과제 마감에 쫓기다 보니 헛것을 본 것 같다. 내 눈을 비비고 다시 과제에나 집중한다.</a>                            <br>                                                                                                                               <a href="8_studio_dice.html">2.저 꼬마는 누구고, 왜 나를 향해 기분 나쁘게 웃고 있는지 영문을 알 수 없다. 하던 건 모르겠고 나도 동기 옆에서 잠이나 잔다. </a> <br>                                     <a href="8_studio_dice.html">3.기분 나쁘게 웃는 꼬마를 향해 2배는 기분 나쁘게 웃어준다. 아무 웃음 챌린지. </a> <br>    <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

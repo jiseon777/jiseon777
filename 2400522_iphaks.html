@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/main.png" alt="내사진"\ width="594px" height="324px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+     <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '0. 입학식(튜토리얼)',
+            '시각디자인과에 들어오신 것을 환영합니다! 친구로 삼고 싶은, 마음에 드는 동기는 발견했나요? <br> 아직 없어도 괜찮답니다, 당신이 학교에 머무를 기간은 생각보다도 굉장히 길답니다. 서두르지 말고 천천히 가는 거예요!<br><br><br> [어떻게 진행되는 게임인가요?]<br><br>본 게임은 메인 보드판과 스토리 진행을 도와줄 웹사이트로 구성됩니다. 보드판 칸과 웹사이트 페이지는 서로 매치됩니다. 보드판의 모든 칸을 한 칸씩 옮겨가며, 웹사이트의 스토리를 감상하게 됩니다. 웹사이트에서 진행되는 스토리를 감상하고, 원하는 선택지를 선택하세요. 선택된 선택지들은 쌓이고 쌓여서 주인공(플레이어)의 성격과 사건을 만들어 갑니다.<br> 선택지를 선택하게 되면, 웹사이트의 안내에 따라 주사위를 굴리세요. 주사위 값이 높으면 당신은 학점(3점)를 얻을 수 있고, 낮다면 학점을 얻지 못합니다. 얻은 학점은 까먹지 않도록 성적표(점수판)에 수기로 기록해주세요. <br> 보드판을 한 바퀴 돌 동안 38점을 얻으면 당신은 무사히 학교를 졸업할 수 있습니다. <br> 학점을 많이 모으지 못하셨나요? 걱정하지 마세요! 우리에겐 전공심화 제도가 있습니다. 전공심화실에서까지 무사히 학점을 채운다면, 당신은 시각디자인과 학위를 얻을 수 있습니다. <br>졸업을 해내지 못할까 미리 두려워 마세요! 우리 학교는 당신의 성공적인 졸업을 응원하기 위해 게임 진행을 도와줄 아이템들을 큐알코드로 설치해두었답니다. 아이템을 얻어서 게임 진행에 도움을 받으세요!<br> 그럼, 시각디자인과 학생이 될 준비가 되었나요?','최적화를 위해 화면을 꼭 전체화면으로 전환 후 진행해주세요!<br> 본 게임의 선택지는 각 챕터마다 번호가 매겨져 6개씩 구성되어 있습니다. 번호를 일정하게 선택할 수도 있고, 섞어서 선택할 수도 있습니다. 일정하게 선택한다면, 제작자가 서술한 성격/상황의 플레이어로 거듭날 것입니다.',
+            '"어디 한 번 가볼까?" <br><br>                                                                                       <a href="1_whajangsil.html">즐거운 학교생활 시작!</a>                            <br>                                                                                                                               '
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

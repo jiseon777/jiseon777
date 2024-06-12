@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day9.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+    <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '5. 701',
+            '슬슬 학교에 적응이 되어 가는 시기입니다. 하지만 과제에는 여전히 적응이 쉽지 않네요. 사실 적응이 되었다고 말하고 싶지 않습니다. 오늘도 이렇게 철야안 것을 보면요. 종강은 대체 언제 오는 걸까요? 종강만을 외치지만 아직 중간고사도 안 지났습니다. <br><br> 평화로운 야작 타임입니다. 오늘은 특별한 일 없이 밤이 지나갑니다. 당신의 과제도 수월하게 진행되고 있나요? <br> 계원은 주변이 산으로 둘러싸인 학교입니다. 덕분에 공기가 매우 맑습니다. 당신, 너무 앉아만 있는 게 아닌지요. 잠시 일어나 기지개를 켜고 피곤을 쫓아낼 겸 창문 근처로 다가갑니다. 밖은 어두워서 사방이 분간이 되지 않지만, 곧 암시야에 적응되기 마련입니다. 창문 밖에는 산이 있습니다. 그리고, 무덤가도 함께입니다. 무덤가 근처를 빤히 바라보고 있는데, 검은 아지랑이가 일렁이다 사라지기를 반복합니다. <br> 들짐승일까요? 개나 멧돼지, 노루라고 하기엔 크기가 꽤 큰 것 같습니다. 멀어서 자세한 생김새가 파악 되지 않지만, 알고 있던 짐승의 형체와는 다르다는 것을 압니다.  ',
+            '도대체 뭘 본 걸까요? <br><br>                                                                                       <a href="5_701_dice.html">1.너무 피곤해서 헛것이 다 보이나 싶다. 하지만 신기한 마음도 든다. 소셜 미디어 세대 답게 손은 핸드폰 먼저 찾는다. 사진으로 남겨야 내 말을 믿어줄 것 같다.</a>                            <br>                                                                                                                               <a href="5_701_dice.html">2.산 주변은 터가 안 좋다는 말도 있었던 것 같은데. 저런 위험한 동물들이 돌아다니는데 시 당국은 아무런 조치도 취하지 않는 건가 싶어 잠시 분노한다. 하지만 딱히 내가 할 수 있는 일은 많지 않고, 나랑 큰 관련도 없는 일이라고 생각한다. 여기는 7층이고, 저 괴물이 내가 있는 곳으로 찾아올 일은 절대 없을 테니까. <br> 절대. </a> <br>                                     <a href="5_701_dice.html">3.저런 건 찍어서 남겨두면 좋은 영감이 되어주지 않을까 싶다. 계속 보니 귀여운 것도 같고, 탈춤에서 나오는 짐승?같이 생긴 것도 같고. 예대라 재미있는 컨텐츠가 많은 것 같다. </a> <br>    <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>

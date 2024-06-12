@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'awq6zow',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+   
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('img/screen.png');
+            background-size: cover;
+            background-position: center;
+             background-position: center 3%;
+            background-repeat: no-repeat;
+        }
+         body {background-color:rgb(36,36,36);}
+          #ipjang  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:600px;
+          top:680px;
+
+           }
+           #home  {  text-align: center;  text-decoration: none; color: white;
+            position: absolute;
+          left:30px;
+          top:25px;
+
+           }
+         .text-container {
+            top: 750px;
+            left: 400px;
+            right: 50px;
+            position: absolute;
+            font-family: "pretendard", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: white;
+            height: 150px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            background-color: rgb(36, 36, 36);
+        }
+        
+        
+        .button {
+
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+           
+            
+
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .img {
+            top: 150px;
+            left: 510px;
+            position: absolute;
+        }
+        a {
+            color: white; /* 기본 링크 색상 */
+            text-decoration: none; /* 기본 밑줄 제거 */
+        }
+
+        a:visited {
+            color: gray; /* 방문한 링크 색상 */
+        }
+
+        a:hover {
+            color: red; /* 마우스를 올렸을 때의 링크 색상 */
+        }
+
+        a:active {
+            color: white; /* 클릭했을 때의 링크 색상 */
+        }
+        
+    </style>
+</head>
+<body>
+    <a id="home" href="#" onclick="location.href='240522_yajac.html'">홈</a>
+
+    <div class="img">
+    <img id="start" src = "img/day29.png" alt="내사진"\ width="768px" height="432px">
+</div>
+    
+    
+     <div class="text-container" id="text-container">
+        This is the first text. Click "Next" to see the next text.
+    </div>
+    <div class="button">
+        
+        <button class="button" onclick="nextText()">다음</button>
+    </div>
+
+    <script>
+        var texts = [
+            '3. 자판기',
+            '야작을 하다 보면, 늘 한밤중에 배가 고픈 편입니다. 하지만 심야엔 배달의 민족도 단잠을 청하러 갑니다. 문을 여는 곳은 남매카페와 편의점 뿐인데, 왠지 혼자 사러 나가기엔 귀찮기도 하고 또 조금 무섭습니다. 이럴 때 주린 배를 달래주는 것은 화장실 앞 음료수 자판기입니다. 대단히 맛있는 음료수가 있지는 않지만, 급할 때는 또 이만한 게 없습니다. 몇 년 전에는 닥터페퍼도 있었다는 소문이 들려 옵니다. <br><br> 지금은 새벽 세 시가 조금 넘어갑니다. 어김없이 허기집니다. 음료수 자판기에서 무얼 마실까 고민하고 있던 중, 뒤에서 인기척이 납니다. 누군가가 서있네요. 당신이 뒤돌면 마주 보게 됩니다. 각도로 보아 음료수를 뽑아 마시고 싶은 학우가 아닐까 싶습니다. 사실 당신은 조금 놀랐을지도 모릅니다. 그래도 사람이었다니 안심이 되네요. 학우는 묘한 분위기를 풍기며 멀뚱히 서 있습니다.',
+            '학우의 얼굴을 너무 오래 쳐다보면 실례가 아닐까요? <br><br>                                                                                       <a href="3_japanki_dice.html">1."아, 죄송합니다. 제가 너무 오래 봤죠." 당장 고르고싶은 것이 없는 만큼, 바로 비켜줍니다. 당신은 바로 강의실로 돌아갈 생각이지만, 그냥 돌아서기에 뻘쭘한 기분이라 혼잣말, 하지만 학우에게 들릴 정도의,을 읊습니다. "파워에이드는 없나..."</a>                            <br>                                                                                                                               <a href="3_japanki_dice.html">2. 새벽 세 시에 자판기 음료수를 뽑고 싶은 사람이 둘 이상일 수는 있다. 얼마든지 있을 수 있는 일이다. 별로 이상할 것도 없다. <br>하지만 오늘, 야작 신청자는 나 뿐이었을 텐데...? </a> <br>                                     <a href="3_japanki_dice.html">3.자세히 보니 아는 얼굴인 것도 같지만, 사실 명확하지는 않습니다. 그래도 역시 남의 얼굴을 너무 뚫어져라 보면 부담스럽겠죠. 별다른 말을 하지 않고 자판기에서 떨어집니다. </a> <br>    <br>'
+            
+        ];
+        var currentIndex = 0;
+
+        function updateText() {
+            var textContainer = document.getElementById('text-container');
+            textContainer.innerHTML = texts[currentIndex];
+        }
+
+        function nextText() {
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText();
+            } else {
+                alert("You have reached the end of the texts.");
+            }
+        }
+
+        function prevText() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText();
+            } else {
+                alert("You are already at the first text.");
+            }
+        }
+
+        // Initialize the text container with the first text
+        updateText();
+
+
+    </script>
+   
+
+</body>
+</html>
